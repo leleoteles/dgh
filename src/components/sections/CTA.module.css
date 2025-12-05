@@ -1,0 +1,24 @@
+.cta {
+    background: linear-gradient(135deg, var(--color-primary-inst) 0%, var(--color-secondary-navy) 100%);
+    padding: var(--spacing-section) 0;
+    text-align: center;
+    color: var(--color-neutral-white);
+}
+
+.title {
+    font-size: var(--size-h2);
+    color: var(--color-neutral-white);
+    margin-bottom: var(--spacing-lg);
+    font-weight: var(--weight-bold);
+}
+
+.button {
+    background-color: var(--color-neutral-white) !important;
+    color: var(--color-primary-inst) !important;
+}
+
+.button:hover {
+    background-color: var(--color-neutral-light) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

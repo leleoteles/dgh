@@ -1,0 +1,59 @@
+:root {
+  /* Colors */
+  --color-primary-teal: #00BCD4;
+  --color-primary-teal-dark: #00A5BD;
+  --color-primary-inst: #003D82;
+  /* Brand Voice override */
+  --color-primary-corp: #006B7D;
+  /* Brand Voice override */
+
+  --color-secondary-navy: #0A2540;
+
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-light: #F7F9FC;
+  --color-neutral-medium: #5B6B7F;
+  /* Body text */
+  --color-neutral-dark: #1A1F36;
+  /* Headings */
+
+  --color-accent-gold: #D4AF37;
+  --color-accent-soft-blue: #E8F4F8;
+
+  /* Typography */
+  --font-primary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --size-hero: 72px;
+  --size-h1: 56px;
+  --size-h2: 42px;
+  --size-h3: 28px;
+  --size-body: 18px;
+  --size-label: 14px;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 64px;
+  --spacing-3xl: 80px;
+  --spacing-section: 120px;
+  --spacing-section-lg: 140px;
+
+  /* Layout */
+  --max-width-content: 1280px;
+  --max-width-text: 720px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+}

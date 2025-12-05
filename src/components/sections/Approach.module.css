@@ -1,0 +1,237 @@
+.approach {
+    background-color: var(--color-neutral-white);
+    padding: var(--spacing-section) 0;
+    overflow: hidden;
+}
+
+.contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-section);
+    align-items: center;
+}
+
+/* Text Content - Positioned Left by Grid order */
+.textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 500px;
+}
+
+.label {
+    display: block;
+    font-size: var(--size-label);
+    color: var(--color-primary-teal);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: var(--weight-semibold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.title {
+    font-size: 36px;
+    /* Adjusted slightly smaller than 42px for longer text? Or keep 42. Let's try 38 */
+    font-weight: var(--weight-bold);
+    color: var(--color-neutral-dark);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.description {
+    font-size: var(--size-body);
+    color: var(--color-neutral-medium);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-lg) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-neutral-dark);
+    font-weight: var(--weight-medium);
+    font-size: 16px;
+}
+
+.checkIcon {
+    color: var(--color-primary-teal);
+    /* Teal for check icon to match label */
+    stroke-width: 2px;
+}
+
+.ctaButton {
+    background-color: var(--color-primary-teal);
+    /* Blue/Teal */
+    color: white;
+    font-weight: var(--weight-bold);
+    border: none;
+    padding: 12px 24px;
+}
+
+.ctaButton:hover {
+    background-color: var(--color-primary-teal-dark);
+}
+
+/* Image Section - Right Side */
+.imageSection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.imageCard {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 32px;
+    /* Large rounding like ref */
+    overflow: visible;
+    /* Allow floating card to pop out if needed */
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+    border-radius: 32px;
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+}
+
+.floatingCard {
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    background: white;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    width: 320px;
+    z-index: 2;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Subtle border */
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.cardHeader {
+    margin-bottom: var(--spacing-md);
+}
+
+.cardTitle {
+    font-size: 16px;
+    font-weight: var(--weight-bold);
+    color: var(--color-neutral-dark);
+}
+
+.expenseList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.expenseItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expenseIconInfo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.expenseIconBg {
+    background-color: #dbeafe;
+    /* Blue accent */
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e40af;
+}
+
+.expenseDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.expenseName {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-neutral-dark);
+}
+
+.expenseValue {
+    font-size: 13px;
+    color: var(--color-neutral-medium);
+}
+
+.expenseTotals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.expenseYearTotal {
+    font-size: 12px;
+    color: var(--color-neutral-medium);
+}
+
+.expenseTotalValue {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-neutral-dark);
+}
+
+@media (max-width: 1024px) {
+    .contentWrapper {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .textContent {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .floatingCard {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: -40px;
+    }
+
+    .imageCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
