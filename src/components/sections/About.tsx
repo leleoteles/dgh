@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Eye, Award, ArrowRight, Shield, Zap, TrendingUp } from 'lucide-react';
+import { Target, Eye, ArrowRight, Shield, Zap, TrendingUp } from 'lucide-react';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 import styles from './About.module.css';
