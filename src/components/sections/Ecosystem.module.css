@@ -34,9 +34,9 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-lg);
-    max-width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
-    padding: 40px;
+    padding: 32px;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -103,6 +103,12 @@
 
 .card:hover .link {
     gap: 12px;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
