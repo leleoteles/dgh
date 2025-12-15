@@ -34,7 +34,6 @@ export const Footer: React.FC = () => {
                         <ul className={styles.linkList}>
                             <li><a href="#" className={styles.link}>DGBK Credit</a></li>
                             <li><a href="#" className={styles.link}>DG Seguros</a></li>
-                            <li><a href="#" className={styles.link}>Fam CredClub</a></li>
                             <li><a href="#" className={styles.link}>DG Invest</a></li>
                         </ul>
                     </div>
@@ -43,8 +42,6 @@ export const Footer: React.FC = () => {
                         <h4 className={styles.columnTitle}>Contato</h4>
                         <ul className={styles.linkList}>
                             <li><a href="#" className={styles.link}>contato@dghholdings.com.br</a></li>
-                            <li><a href="#" className={styles.link}>+55 (11) 3000-0000</a></li>
-                            <li><a href="#" className={styles.link}>Imprensa</a></li>
                         </ul>
                     </div>
                 </div>
