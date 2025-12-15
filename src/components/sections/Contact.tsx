@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Newspaper, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 import { Select } from '../ui/Select';
@@ -54,34 +54,6 @@ export const Contact: React.FC = () => {
 
                     <div className={styles.imageSection}>
                         <img src={contactImage} alt="Atendimento DGH" className={styles.image} />
-                        <div className={styles.overlay}>
-                            <h3 className={styles.overlayTitle}>Canais de Atendimento</h3>
-
-                            <div className={styles.contactInfo}>
-                                <div className={styles.infoItem}>
-                                    <MapPin size={20} className={styles.icon} />
-                                    <span className={styles.infoText}>
-                                        Av. Brigadeiro Faria Lima, 3477<br />
-                                        Itaim Bibi, São Paulo - SP
-                                    </span>
-                                </div>
-
-                                <div className={styles.infoItem}>
-                                    <Phone size={20} className={styles.icon} />
-                                    <span className={styles.infoText}>+55 (11) 3000-0000</span>
-                                </div>
-
-                                <div className={styles.infoItem}>
-                                    <Mail size={20} className={styles.icon} />
-                                    <span className={styles.infoText}>contato@dghholdings.com.br</span>
-                                </div>
-
-                                <div className={styles.infoItem}>
-                                    <Newspaper size={20} className={styles.icon} />
-                                    <span className={styles.infoText}>imprensa@dghholdings.com.br</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </Container>
